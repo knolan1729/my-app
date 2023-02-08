@@ -37,12 +37,15 @@
 		    <id>nexus</id>
 		    <url>http://13.233.125.37:8081/repository/maven-snapshots/</url>
 		 </snapshotRepository>
-		
 		<repository>
 		    <id>nexus</id>
 		    <url>http://13.233.125.37:8081/repository/maven-releases/</url>
 		</repository>
   	</distributionManagement>
+<properties>
+  <sonar.ws.timeout>180</sonar.ws.timeout>
+</properties>
+
 	
 <build>
     <plugins>
